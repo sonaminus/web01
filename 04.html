@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="alert-box" id="aler"><span id="content">아이디</span>를 입력안하셨어요.
+        <button onclick="알림창열기('none')">X</button>
+    </div>
+    <button onclick="알림창열기('block'), 아이디비번('아이디')">버튼</button>
+    <button onclick="알림창열기('block'), 아이디비번('비번')">버튼2</button>
+    <script>
+        function 알림창열기(구멍){
+            document.getElementById('aler').style.display=구멍;
+        }
+
+        function 아이디비번(구멍2){
+        document.getElementById('content').innerHTML=구멍2;
+        }
+
+    </script>
+</body>
+</html>
